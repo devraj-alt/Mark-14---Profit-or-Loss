@@ -1,88 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
 
 body {
-    text-align: center;
-    font-family: Overpass;
-    background-color: whitesmoke;
-    margin: 0%;
+  text-align: center;
+  font-family: Overpass;
+  background-color: whitesmoke;
+  margin: 0%;
 }
 
 .heading {
-    padding-bottom: 3rem;
-    font-size: 2.5rem;
+  padding-bottom: 3rem;
+  font-size: 2.5rem;
 }
 
 .text-color {
-    color: #1D4ED8;
+  color: #1d4ed8;
 }
 
 label {
-    display: block;
-    padding-bottom: 1rem;
+  display: block;
+  padding-bottom: 1rem;
 }
 
 input {
-    width: 18%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 5px;
+  width: 18%;
+  min-width: 170px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
 
 .main-img {
-    height: 300px;
-    width: 650px;
-    float: left;
+  height: 300px;
+  width: 100%;
+  float: left;
 }
 
 #submit-Btn {
-    width: 130px;
-    height: 45px;
-    background: none;
-    color: #DC2626;
-    border: none;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 1.05rem;
-    border-radius: 50px;
-    background: white;
-    position: relative;
+  width: 130px;
+  height: 45px;
+  background: none;
+  color: #dc2626;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.05rem;
+  border-radius: 50px;
+  background: white;
+  position: relative;
 }
 
 #submit-Btn::before {
-    content: '';
-    position: absolute;
-    top: -10%;
-    left: -5%;
-    width: 110%;
-    height: 120%;
-    border-radius: 50px;
-    z-index: -1;
-    background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
-    transform: scale(0.8);
-    transition: transform .45s;
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -5%;
+  width: 110%;
+  height: 120%;
+  border-radius: 50px;
+  z-index: -1;
+  background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
+  transform: scale(0.8);
+  transition: transform 0.45s;
 }
 
 #submit-Btn::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0%;
-    right: 0;
-    bottom: 0;
-    z-index: -2;
-    filter: blur(10px);
-    background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
-    transform: scale(0.5);
-    transition: transform .45s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0%;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+  filter: blur(10px);
+  background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
+  transform: scale(0.5);
+  transition: transform 0.45s;
 }
 
 #submit-Btn:hover::before,
 submit-Btn:hover::after {
-    transform: scale(1);
+  transform: scale(1);
 }
 
 #output-box {
-    padding-top: 3rem;
-    font-size: 1.5rem;
+  padding: 3rem;
+  font-size: 1.5rem;
 }
