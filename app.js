@@ -10,8 +10,11 @@ function submitHandler() {
   var ip = Number(initialPrice.value);
   var qty = Number(stockQuantity.value);
   var cur = Number(currentPrice.value);
-
-  calculateProfitAndLoss(ip, qty, cur);
+  if (ip > 0 && qty > 0 && cur > 0) {
+    calculateProfitAndLoss(ip, qty, cur);
+  } else {
+    showOutput("Invalid input");
+  }
 }
 
 function calculateProfitAndLoss(initial, quantity, current) {
